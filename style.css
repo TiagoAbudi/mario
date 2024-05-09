@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.game-board {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  border-bottom: 15px solid green;
+  overflow: hidden;
+  background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+.pipe {
+  position: absolute;
+  bottom: 0;
+  right: 300px;
+  width: 80px;
+}
+
+.clouds {
+  position: absolute;
+  width: 550px;
+}
+
+.mario {
+  display: none;
+  position: absolute;
+  width: 150px;
+  bottom: 0;
+}
+
+.jump {
+  animation: jump 500ms ease-out;
+}
+
+.div-game-over {
+  position: absolute;
+  font-family: "New Super Mario Font U";
+  padding: 15px 50px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  display: none;
+}
+
+.div-comeco {
+  position: absolute;
+  font-family: "New Super Mario Font U";
+  padding: 15px 50px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  display: flex;
+}
+
+.mario-inicio {
+  position: absolute;
+  left: -600px;
+}
+
+.titulo-bem-vindo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.titulo-bem-vindo h1 {
+  font-size: 54px;
+  color: #ff0000;
+  margin: -10px;
+}
+.titulo-bem-vindo h2 {
+  margin: -10px;
+  font-size: 40px;
+}
+
+.pontos {
+  position: absolute;
+  font-family: "New Super Mario Font U";
+  padding: 5px 10px;
+  margin: 5px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+}
+
+.btn-reiniciar, .btn-comeca {
+  background: #ff0000;
+  padding: 5px 20px;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.btn-reiniciar:hover, .btn-comeca:hover {
+  background: #ab0000;
+  cursor: pointer;
+  animation: translateY 0.9s infinite alternate;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@keyframes pipe-animation {
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
+}
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 180px;
+  }
+  50% {
+    bottom: 180px;
+  }
+  60% {
+    bottom: 180px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes clouds-animation {
+  from {
+    right: -550px;
+  }
+  to {
+    right: 100%;
+  }
+}
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-4px) scale(1.1);
+  }
+}/*# sourceMappingURL=style.css.map */

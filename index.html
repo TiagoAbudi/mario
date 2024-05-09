@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/new-super-mario-font-u" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Mario</title>
+</head>
+
+<body>
+
+    <div class="game-board">
+        <img src="./img/clouds.png" class="clouds">
+        <img src="./img/mario-inicio.svg" class="mario-inicio">
+        <img src="./img/mario.gif" class="mario">
+        <img src="./img/pipe.png" class="pipe">
+        <audio id="trilha" preload="auto" loop>
+            <source src="./song/trilha.mp3" type="audio/mpeg">
+        </audio>
+        <div class="pontos">
+            <p>Pts.: 0</p>
+        </div>
+        <div class="container">
+            <div class="div-comeco">
+                <div class="titulo-bem-vindo">
+                    <h2>Super</h2>
+                    <h1>Mario</h1>
+                </div>
+                <p id="btnComeca" class="btn-comeca">Iniciar</p>
+            </div>
+            <div class="div-game-over">
+                <h1>Game Over</h1>
+                <h2>Pts.: 0</h2>
+                <p id="btnReinicia" class="btn-reiniciar">Reiniciar</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="./js/script.js"></script>
+
+</html>
